@@ -1,0 +1,11 @@
+
+import requests
+from bs4 import BeautifulSoup
+
+URL = "https://example.com"
+response = requests.get(URL)
+soup = BeautifulSoup(response.text, 'html.parser')
+
+titles = soup.find_all('h2')
+for i, title in enumerate(titles[:10]):
+    print(f"{i+1}: {title.get_text(strip=True)}")
