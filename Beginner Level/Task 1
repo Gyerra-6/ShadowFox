@@ -1,0 +1,14 @@
+
+# Task 1: Variables
+pi = 22/7
+print("Value of pi:", pi)
+print("Type of pi:", type(pi))
+
+# Using 'for' as variable name is invalid in Python, it's a reserved keyword
+# for = 4  # This will cause a SyntaxError
+
+P = 10000  # Principal
+R = 5      # Rate
+T = 3      # Time
+SI = (P * R * T) / 100
+print("Simple Interest for 3 years:", SI)
