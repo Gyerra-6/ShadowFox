@@ -1,0 +1,20 @@
+
+# Task 2: Numbers
+def formatted_output(a, b):
+    return format(a, b)
+
+print(formatted_output(145, 'o'))
+
+# Pond area and water content
+radius = 84
+pi = 3.14
+area = pi * radius ** 2
+water_liters = int(area * 1.4)
+print("Total water in the pond (liters):", water_liters)
+
+# Speed calculation
+distance = 490
+time_minutes = 7
+time_seconds = time_minutes * 60
+speed = int(distance / time_seconds)
+print("Speed (m/s):", speed)
