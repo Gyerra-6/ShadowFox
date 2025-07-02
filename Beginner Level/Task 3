@@ -1,0 +1,22 @@
+
+# Task 3: List operations
+justice_league = ["Superman", "Batman", "Wonder Woman", "Flash", "Aquaman", "Green Lantern"]
+print("Original List:", justice_league)
+
+print("Members count:", len(justice_league))
+justice_league.extend(["Batgirl", "Nightwing"])
+print("After Recruitment:", justice_league)
+
+justice_league.remove("Wonder Woman")
+justice_league.insert(0, "Wonder Woman")
+print("Wonder Woman as Leader:", justice_league)
+
+justice_league.insert(justice_league.index("Aquaman") + 1, "Superman")
+print("Separated Aquaman and Flash:", justice_league)
+
+justice_league = ["Cyborg", "Shazam", "Hawkgirl", "Martian Manhunter", "Green Arrow"]
+print("New Team:", justice_league)
+
+justice_league.sort()
+print("Sorted List:", justice_league)
+print("New Leader:", justice_league[0])
