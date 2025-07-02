@@ -1,0 +1,20 @@
+
+import pandas as pd
+
+# Load sample data (use 'IPL sample data.xlsx' in same dir)
+df = pd.read_excel('IPL sample data.xlsx')
+
+# Simulate fielding events and scoring (just a mock template)
+df['Clean_Pick'] = [1, 0, 1]
+df['Good_Throw'] = [0, 1, 1]
+df['Catch'] = [1, 0, 0]
+df['Drop_Catch'] = [0, 1, 0]
+df['Run_Out'] = [1, 0, 0]
+df['Runs_Saved'] = [2, -1, 1]
+
+# Calculate performance score (simplified)
+df['PS'] = (df['Clean_Pick']*5 + df['Good_Throw']*4 + df['Catch']*10 +
+            df['Drop_Catch']*-5 + df['Run_Out']*10 + df['Runs_Saved'])
+
+print(df[['Player Name', 'PS']])
+df.to_excel('Fielding_Performance_Analysis.xlsx', index=False)
