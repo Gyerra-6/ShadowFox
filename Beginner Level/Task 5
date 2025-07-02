@@ -1,0 +1,10 @@
+
+# Task 5: For Loop - Dice roll simulation
+import random
+
+dice_rolls = [random.randint(1, 6) for _ in range(20)]
+print("Rolls:", dice_rolls)
+print("Rolled 6:", dice_rolls.count(6))
+print("Rolled 1:", dice_rolls.count(1))
+double_six = sum(1 for i in range(len(dice_rolls)-1) if dice_rolls[i] == dice_rolls[i+1] == 6)
+print("Two 6s in a row:", double_six)
