@@ -4,15 +4,15 @@ A collection of Python projects completed during an internship at **ShadowFox**,
 
 ---
 
-## ✅ Key Features
+## Key Features
 
-- 🐍 Multiple Python tasks—from web scraping to AI scripting.  
-- 🤖 Implementations include NLP bots, data parsers, automation scripts.  
-- ⚙️ Focus on hands-on problem-solving and Python best practices.
+- Multiple Python tasks—from web scraping to AI scripting.  
+- Implementations include NLP bots, data parsers, automation scripts.  
+- Focus on hands-on problem-solving and Python best practices.
 
 ---
 
-## 📦 What the Project Does
+## What the Project Does
 
 This repository bundles a variety of internship assignments completed at ShadowFox, such as:
 
